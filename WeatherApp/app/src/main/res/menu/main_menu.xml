@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="Search"
+        android:id="@+id/search"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="ifRoom|collapseActionView"
+        app:actionViewClass="android.support.v7.widget.SearchView"/>
+    <item
+        android:title="Select Temperature Unit"
+        app:showAsAction="never">
+    <menu>
+        <item
+            android:title="Celsius"
+            android:id="@+id/celsius"
+            app:showAsAction="never"
+            />
+        <item
+            android:title="Fahrenheit"
+            android:id="@+id/fahrenheit"
+            app:showAsAction="never" />
+
+    </menu>
+    </item>
+
+    <item
+        android:title="Exit"
+        android:id="@+id/exit"
+        app:showAsAction="never"/>
+
+</menu>
